@@ -1,0 +1,30 @@
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+
+    @media (max-width: 1023px) {
+        column-gap: 10px;
+    }
+    
+    img {
+        box-shadow: 0px 0px 4px #00C1EC;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+
+        @media (max-width: 1023px) {
+            width: 55px;
+            height: 55px;
+        }
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        height: 100%;
+    }
+}

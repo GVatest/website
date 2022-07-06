@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState, useRef } from "react";
+import Context from "./context";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Features from "./components/Features";
+import Roadmap from "./components/Roadmap";
+import Collection from "./components/Collection";
+import Team from "./components/Team";
+import Footer from "./components/Footer";
+import { ParallaxProvider } from "react-scroll-parallax";
+
+
+const getWidth = () => window.innerWidth 
+  || document.documentElement.clientWidth 
+  || document.body.clientWidth;
 
 function App() {
+  const [isLaptopL, setIsLaptopL] = useState()
+  const [isMobile, setIsMobile] = useState()
+
+  const onResizeListener = () => {
+    setIsLaptopL(getWidth() >= 1400)
+    setIsMobile(getWidth() < 1024)
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", onResizeListener)
+    onResizeListener()
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <ParallaxProvider>
+        <div className="App">
+          <Context.Provider value={{isLaptopL, isMobile}}>
+            <Header/>
+              <div className="container">
+                  <Main/>
+                  <Features/>
+                  <Roadmap/>
+                  <Collection/>
+                  <Team/>
+              </div>
+            <Footer/>
+          </Context.Provider>
+        </div>
+      </ParallaxProvider>
   );
 }
 

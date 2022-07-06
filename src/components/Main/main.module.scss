@@ -1,0 +1,117 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+
+    @media (max-width: 1023px) {
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .main_content {
+        max-width: 70%;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+        @media (max-width: 1023px) {
+            max-width: 100%;
+            row-gap: 30px;
+        }
+
+        h1 {
+            font-size: 110px;
+            font-weight: 500;
+            line-height: 110px;
+
+            @media (max-width: 1023px) {
+                font-size: 60px;
+                font-weight: 500;
+                line-height: 65px;
+                text-align: center;
+            }
+        }
+
+        .subtitle_wrapper {
+            max-width: 70%;
+            @media (max-width: 1023px) {
+                max-width: 800px;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            align-items: center;
+            column-gap: 35px;
+
+            @media (max-width: 1023px) {
+                flex-direction: column;
+                row-gap: 20px;
+            }
+
+            .button_buy {
+                background: #000000;
+                box-shadow: 0px 0px 15px #00B6F4;
+                backdrop-filter: blur(15px);
+                border-radius: 23px;
+                padding: 12px 30px;
+                font-weight: 400;
+                font-size: 25px;
+                border: 1px solid rgba(0, 182, 244, 1);
+                transition: all 0.1s linear;
+                &:hover {
+                    box-shadow: 0px 0px 20px #00B6F4;
+                }
+
+                @media (max-width: 1023px) {
+                    font-size: 20px;
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+    
+
+    img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        z-index: 10;
+        transform: translate(0, -15%);
+
+        @media (max-width: 1280px) {
+            width: 70%;
+            right: -10%;
+        }
+
+        @media (max-width: 1230px) {
+            top: 10%;
+        }
+
+        @media (max-width: 1023px) {
+            display: none;
+        }
+    }
+
+    
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    @media (max-width: 1280px) {
+        top: 1%;
+    }
+
+    @media (max-width: 1023px) {
+        top: 0;
+    }
+}
