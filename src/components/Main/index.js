@@ -14,7 +14,7 @@ function Main() {
     return (
         <>
             <div className={styles.bg}>
-                    <img src={isMobile ? bgMobile : bg} alt="Web Background" />
+                <img src={isMobile ? bgMobile : bg} alt="Web Background" />
             </div>
             <section className={styles.main}>
                 <div className={styles.main_content}>
