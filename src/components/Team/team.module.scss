@@ -22,8 +22,10 @@
             max-width: 400px;
         }
 
-        img {
+        .img {
             box-shadow: 0px 0px 10px 5px #FFFFFF;
+            border: #000 5px solid;
+            overflow: hidden;
             border-radius: 50%;
         }
 

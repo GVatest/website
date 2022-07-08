@@ -8,15 +8,21 @@ function Team() {
             <SectionTitle>Team</SectionTitle>
             <div className={styles.team_wrapper}>
                 <div className={styles.item}>
-                    <img src="images/team/teammate1.webp" alt="Teammate" />
+                    <div className={styles.img}>
+                        <img src="images/team/teammate1.webp" alt="Teammate" />
+                    </div>
                     <div className={styles.info}>CEO, creator of the project</div>
                 </div>
                 <div className={styles.item}>
-                    <img src="images/team/teammate2.webp" alt="Teammate" />
+                    <div className={styles.img}>
+                        <img src="images/team/teammate2.webp" alt="Teammate" />
+                    </div>
                     <div className={styles.info}>Co-founder, manager</div>
                 </div>
                 <div className={styles.item}>
-                    <img src="images/team/teammate3.webp" alt="Teammate" />
+                    <div className={styles.img}>
+                        <img src="images/team/teammate3.webp" alt="Teammate" />
+                    </div>
                     <div className={styles.info}>Leading designer.</div>
                 </div>
             </div>
