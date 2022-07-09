@@ -15,8 +15,8 @@ const getWidth = () => window.innerWidth
   || document.body.clientWidth;
 
 function App() {
-  const [isLaptopL, setIsLaptopL] = useState()
-  const [isMobile, setIsMobile] = useState()
+  const [isLaptopL, setIsLaptopL] = useState(getWidth() >= 1400)
+  const [isMobile, setIsMobile] = useState(getWidth() < 1024)
 
   const onResizeListener = () => {
     setIsLaptopL(getWidth() >= 1400)
@@ -25,7 +25,6 @@ function App() {
 
   useEffect(() => {
     window.addEventListener("resize", onResizeListener)
-    onResizeListener()
   }, [])
 
   return (

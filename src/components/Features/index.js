@@ -31,20 +31,20 @@ function Features() {
             <>
             <FeaturesDiv 
                 header="Live Time Sniper"
-                subtitle="The really vital tool for any Solana enthusiast. It snipes any nft at the same time at appears at the market of even before."
+                subtitle="A vital tool for any solana enthusiast. The software snipes any NFT at the same time it appears on the market."
                 cases={cases.first}
                 imageDesc="Aims"
                 imageSrc={sniperArt}/>
             <FeaturesDiv 
                 header="Scraper"
-                subtitle="View all the information about any NFT of any collection. Floor, rarity and even more."
+                subtitle="Quick access to real-time information on any NFT on Solana: floor, rarity, volume and even more."
                 cases={cases.second}
                 custom_styles={{flexDirection: "row-reverse"}}
                 imageDesc="Scraper"
                 imageSrc={scraperArt}/>
             <FeaturesDiv 
                 header="Minter"
-                subtitle="Be the first to mint any NFT using this feature. Our minter works through desktop, providing the best speed and performance."
+                subtitle="Fed up seeing transactions errors while minting? With us, be among the first to secure your NFTs. Our bot will be available on Windows, providing the best performance and user-friendly experience."
                 cases={cases.third}
                 imageDesc="NFTS"
                 imageSrc={minterArt}/>
