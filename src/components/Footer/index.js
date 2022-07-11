@@ -15,8 +15,7 @@ function Footer() {
                 {!isMobile ? 
                     <>
                         <Logo>
-                            <a href=""><span style={{textDecoration: "underline", fontSize: "20px", lineHeight: "25px"}}>Terms</span></a>
-                            <a href=""><span style={{textDecoration: "underline", fontSize: "20px", lineHeight: "25px"}}>Privacy</span></a>
+                            <a traget="_blank" href="/docs/PrivacyPolicy.html"><span style={{textDecoration: "underline", fontSize: "20px", lineHeight: "25px"}}>Privacy</span></a>
                         </Logo>
                         <span className="powered_by">© 2022 Powered by Solution. All Rights Reserved.</span>
                         <Social/>
