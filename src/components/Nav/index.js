@@ -36,7 +36,7 @@ function Nav({children, isBurgerActive, enableBodyScroll, setIsBurgerActive}) {
                 <div onClick={() => scrollTo("roadmap")} className={styles.border_wrapper}><div className={styles.nav_element}>Roadmap</div></div>
                 <div onClick={() => scrollTo("collection")} className={styles.border_wrapper}><div className={styles.nav_element}>Collection</div></div>
                 <div onClick={() => scrollTo("team")} className={styles.border_wrapper}><div className={styles.nav_element}>Team</div></div>
-                <div className={styles.border_wrapper}><div className={`${styles.nav_element} ${styles.acent}`}><a href="#">Tools</a></div></div>
+                <a target="_blank" href="https://app.solution.ink/"><div className={styles.border_wrapper}><div className={`${styles.nav_element} ${styles.acent}`}>Tools</div></div></a>
                 
             </>
             :
@@ -44,7 +44,7 @@ function Nav({children, isBurgerActive, enableBodyScroll, setIsBurgerActive}) {
                 <div className={styles.border_wrapper}><div className={`${styles.nav_element} ${styles.active}`}>Home</div></div>
                 <div onClick={() => scrollTo("features")} className={styles.border_wrapper}><div className={styles.nav_element}>Features</div></div>
                 <div onClick={() => scrollTo("collection")} className={styles.border_wrapper}><div className={styles.nav_element}>Collection</div></div>
-                <div  className={styles.border_wrapper}><div className={`${styles.nav_element} ${styles.acent}`}><a href="#">Tools</a></div></div>
+                <a target="_blank" href="https://app.solution.ink/"><div className={styles.border_wrapper}><div className={`${styles.nav_element} ${styles.acent}`}>Tools</div></div></a>
             </>
             }
             {children}
