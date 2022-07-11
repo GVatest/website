@@ -28,7 +28,7 @@ function Collection() {
                 <div className={styles.content}>
                     <div className={styles.content_header}>Solution Pass</div>
                     <SubTitle>
-                        A bunch of NFTs of our own, which will provide access to all of the bot’s features, such as scraper, sniper and desktop minter. Moreover, NFT holders will get the opportunity to get all the future features of Solution freely.
+                        Your chance to get access to a unique collection of NFTs, which will equip you with the necessary tools and software to analyze, snipe and mint without ever missing out. NFT holders will have access to all current and future developments.
                     </SubTitle>
                 </div>
             </div>

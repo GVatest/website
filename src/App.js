@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import Context from "./context";
 import Header from "./components/Header";
 import Main from "./components/Main";
