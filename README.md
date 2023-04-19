@@ -2,7 +2,13 @@
 
 > The Solution crypto-activist team's product landing
 
+## Screenshots
+
+<img width="1440" alt="Screenshot 2023-04-19 at 18 06 24" src="https://user-images.githubusercontent.com/66703210/233117732-fb5ab9b0-ea90-4ba1-abea-f4d25304e27f.png">
+
 ## Demo
+
+https://solution-mainpage.netlify.app/
 
 ## Start
 
