@@ -12,11 +12,9 @@ function Footer() {
     return (
         <div className="footer_border_wrapper">
             <footer>
-                {!isMobile ? 
+                {!isMobile ?
                     <>
-                        <Logo>
-                            <a traget="_blank" href="/docs/PrivacyPolicy.html"><span style={{textDecoration: "underline", fontSize: "20px", lineHeight: "25px"}}>Privacy</span></a>
-                        </Logo>
+                        <Logo/>
                         <span className="powered_by">© 2022 Powered by Solution. All Rights Reserved.</span>
                         <Social/>
                     </>

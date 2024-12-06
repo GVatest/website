@@ -18,10 +18,10 @@ function Main() {
             </div>
             <section className={styles.main}>
                 <div className={styles.main_content}>
-                    <h1>The fastest and easiest future software for Solana blockchain.</h1>
+                    <h1>Самый быстрый и простой в использовании софт для соланы</h1>
                         <SubTitle>
                             <div className={styles.subtitle_wrapper} >
-                                Read the information below to learn a little about us:
+                                Смотрите ниже, чтобы узнать больше о нас:
                             </div>
                         </SubTitle>
                     <div className={styles.buttons}>

@@ -2,17 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 10px;
     position: relative;
     z-index: 1001;
-
-    @media (max-width: 1050px) {
-        column-gap: 10px;
-    }
-
-    @media (max-width: 1023px) {
-        margin-top: 10px;
-    }
 }
 
 .social_item {

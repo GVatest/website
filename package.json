@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "body-scroll-lock": "^4.0.0-beta.0",
+    "classnames": "^2.5.1",
     "framer-motion": "^10.12.4",
     "react": "^18.2.0",
     "react-animated-burgers": "^1.2.8",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.3",
+    "react-router-dom": "^7.0.2",
     "react-scroll-parallax": "^3.4.2",
     "sass": "^1.62.0",
     "styled-components": "^5.3.9"

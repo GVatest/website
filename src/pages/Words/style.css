@@ -1,0 +1,108 @@
+.block-words {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.button-words {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 12px;
+    transition: background 0.15s linear;
+
+    &:hover {
+        background: #f3f3f3;
+    }
+
+    &:active {
+        background: #e3e3e3;
+    }
+}
+
+.input-words {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.container-words {
+    padding: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'words words'
+        'drag display';
+    gap: 20px;
+}
+
+.drag-words {
+    grid-area: drag;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .draggable-item-words {
+        border-radius: 100% 0 0 100%;
+    }
+}
+
+.display-words {
+    grid-area: display;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .display__row-words {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.words-words {
+    grid-area: words;
+    display: flex;
+    gap: 10px;
+
+    .words__container-words {
+        width: 100%;
+        padding: 10px;
+        border-radius: 12px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.source-words {
+    position: relative;
+    height: 100%;
+    min-height: 300px;
+}
+
+.drag-container-words {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.draggable-item-words {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.bordered-words {
+    border: 1px solid #ccc;
+}
+
+.hidden-words {
+    display: none;
+}
+

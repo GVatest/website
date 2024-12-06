@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  padding: 15px;
+  background: #535353;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-size: 16px;
+  border: 2px solid transparent;
+
+  &:hover {
+    background: #6e6e6e;
+  }
+
+  &:active {
+    border: 2px solid #535353;
+  }
+
+  &.chosen {
+    transform: scale(1.01);
+
+    &.correct {
+      background: #395139;
+    }
+
+    &.wrong {
+      background: #613838;
+    }
+  }
+
+  .description {
+    margin-top: 12px;
+  }
+}

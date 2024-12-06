@@ -8,7 +8,7 @@ import {HamburgerSpring} from "react-animated-burgers"
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 
-function Header() {
+function Header({navState}) {
 
     const {isMobile} = useContext(Context)
     const [isBurgerActive, setIsBurgerActive] = useState(false)
@@ -31,7 +31,7 @@ function Header() {
                         <Logo>
                             <span style={{fontSize: "25px", fontWeight: "500"}}>Solution</span>
                         </Logo>
-                        <Nav/>
+                        <Nav navState={navState}/>
                         <Social/>
                     </>
                 :
@@ -39,7 +39,7 @@ function Header() {
                         <Logo>
                             <span style={{fontSize: "22px", fontWeight: "500"}}>Solution</span>
                         </Logo>
-                        <Nav enableBodyScroll={enableBodyScroll} setIsBurgerActive={setIsBurgerActive} isBurgerActive={isBurgerActive}>
+                        <Nav isBurgerActive={isBurgerActive} navState={navState}>
                             <Social/>
                         </Nav>
                         <HamburgerSpring style={{right: "20px", position: "fixed", padding: "0", zIndex: 1002}} isActive={isBurgerActive} toggleButton={toggleBurger} barColor="white"/>
